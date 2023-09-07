@@ -9,36 +9,25 @@ using namespace std;
 #include <queue>
 #include <string>
 #include <math.h>
+#define MAXN 200005
 #define ll long long
-int t, n;
-ll count(ll a, ll b)
-{
-    if(a == 0)
-    {
-        return 1;
-    }
-    else
-    {
-        ll res = 0;
-        while(a != 0)
-        {
-            return 0;
-        }
-    }
-}
+ll t, n;
 int main()
-{  
-    cin >> t;
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    t = 1;
     while(t-->0)
     {
         cin >> n;
-        vector<ll> a1;
-        vector<ll> a2;
-        vector<ll> res;
+        vector<int> input;
+        ll res = 1e10;
         for(int i = 0; i < n; i++)
         {
-            res.push_back(count(a1[i], a2[i]));
-    
+            ll temp; cin >> temp;
+            res = min(res, abs(temp));
         }
+        cout << res << "\n";
+
     }
 }
