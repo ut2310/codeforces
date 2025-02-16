@@ -1,0 +1,25 @@
+using namespace std;
+#include <bits/stdc++.h>
+#define ll long long
+#define MAXN 22
+#define ALPHABETSIZE 26
+#define ff first
+#define ss second
+#define pii pair<long long,long long>
+#define vi vector<long long>
+#define vii vector<pair<long long,long long>>
+
+int main()
+{
+    ios_base::sync_with_stdio(false); 
+    cin.tie(NULL);
+    ll t; cin >> t;
+    while(t-->0){
+        string s; cin >> s;
+        ll res = 0;
+        for(int i = 0; i < s.size(); i++){
+            if(s[i] == '1') res++;
+        }
+        cout << res << "\n";
+    }
+}
